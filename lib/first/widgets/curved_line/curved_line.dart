@@ -67,7 +67,7 @@ class _CurvedLineCustomPainter extends CustomPainter {
     final controlPoint =
     Offset((point2.dx - point1.dx) / 2, point1.dy - (curveHeight * 2) + lineThickness);
 
-    Path linePath = new Path();
+    Path linePath = Path();
     linePath.moveTo(point1.dx, point1.dy);
     linePath.quadraticBezierTo(controlPoint.dx, controlPoint.dy, point2.dx, point2.dy);
 
