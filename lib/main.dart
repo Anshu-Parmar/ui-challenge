@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:uichallenge/first/first_ui.dart';
 import 'package:uichallenge/other/rotation_example/rotation_example.dart';
 import 'package:uichallenge/second/second_ui.dart';
+import 'package:uichallenge/third/third_ui.dart';
 
 void main() {
   runApp(const MyApp());
@@ -31,8 +32,8 @@ class MyApp extends StatelessWidget {
       ),
       // home: const FirstUi(),
       // home: const SecondUi(),
-      // home: const SecondUi(),
-      home: const RotationExample(),
+      // home: const RotationExample(),
+      home: const ThirdUi(),
     );
   }
 }
