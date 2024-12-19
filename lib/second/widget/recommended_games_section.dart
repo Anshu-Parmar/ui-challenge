@@ -49,7 +49,7 @@ class RecommendedGamesSection extends StatelessWidget {
           height: 24,
         ),
         Padding(
-          padding: EdgeInsets.symmetric(horizontal: pagePadding),
+          padding: const EdgeInsets.symmetric(horizontal: pagePadding),
           child: Row(
             children: [
               const Text('Recommended Games', style: TextStyle(color: Colors.black, fontSize: 22)),

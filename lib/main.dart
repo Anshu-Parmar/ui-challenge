@@ -2,11 +2,8 @@ import 'dart:ui';
 
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'package:uichallenge/first/first_ui.dart';
+import 'package:uichallenge/fifth/fifth_ui.dart';
 import 'package:uichallenge/fourth/fourth_ui.dart';
-import 'package:uichallenge/other/rotation_example/rotation_example.dart';
-import 'package:uichallenge/second/second_ui.dart';
-import 'package:uichallenge/third/third_ui.dart';
 
 void main() {
   runApp(const MyApp());

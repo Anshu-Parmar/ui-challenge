@@ -7,7 +7,7 @@ class HeadingSection extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.all(pagePadding),
+      padding: const EdgeInsets.all(pagePadding),
       child: Row(
         mainAxisSize: MainAxisSize.max,
         crossAxisAlignment: CrossAxisAlignment.center,

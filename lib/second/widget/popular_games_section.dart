@@ -55,15 +55,15 @@ class PopularGamesSection extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Padding(
+        const Padding(
           padding: EdgeInsets.symmetric(horizontal: pagePadding),
-          child: const Text('Recently Released', style: TextStyle(color: Color(0xFF7B7B7B), fontSize: 12)),
+          child: Text('Recently Released', style: TextStyle(color: Color(0xFF7B7B7B), fontSize: 12)),
         ),
         const SizedBox(
           height: 6,
         ),
         Padding(
-          padding: EdgeInsets.symmetric(horizontal: pagePadding),
+          padding: const EdgeInsets.symmetric(horizontal: pagePadding),
           child: Row(
             children: [
               const Text('Popular Games', style: TextStyle(color: Colors.black, fontSize: 22)),
