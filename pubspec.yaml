@@ -31,6 +31,7 @@ flutter:
     - assets/images/first/
     - assets/images/second/
     - assets/images/third/
+    - assets/images/fifth/
   # fonts:
   #   - family: Schyler
   #     fonts:
