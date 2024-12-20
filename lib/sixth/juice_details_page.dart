@@ -16,7 +16,7 @@ class JuiceDetailsPage extends StatefulWidget {
 
 class _JuiceDetailsPageState extends State<JuiceDetailsPage> {
   var count = 0;
-  double bottomSectionHeight = 100;
+  double bottomSectionHeight = 80;
 
   @override
   Widget build(BuildContext context) {
@@ -72,7 +72,7 @@ class _JuiceDetailsPageState extends State<JuiceDetailsPage> {
                             },
                             onDecreaseClicked: () {
                               setState(() {
-                                count--;
+                                count > 0 ? count-- : count = 0;
                               });
                             },
                           ),
@@ -167,7 +167,7 @@ class _JuiceDetailsPageState extends State<JuiceDetailsPage> {
             alignment: Alignment.bottomCenter,
             child: Container(
               height: bottomSectionHeight,
-              color: Colors.white,
+              color: widget.juice.color,
               padding: const EdgeInsets.symmetric(horizontal: 12),
               child: Row(
                 children: [
@@ -199,8 +199,8 @@ class _JuiceDetailsPageState extends State<JuiceDetailsPage> {
                     height: 48,
                     child: MyButton(
                       text: 'Buy Now',
-                      bgColor: widget.juice.color,
-                      textColor: Colors.white,
+                      bgColor: Colors.white,
+                      textColor: widget.juice.color,
                     ),
                   )
                 ],

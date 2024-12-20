@@ -28,7 +28,7 @@ class CounterWidget extends StatelessWidget {
         mainAxisSize: MainAxisSize.min,
         children: [
           const SizedBox(width: 16),
-          GestureDetector(onTap: onDecreaseClicked, child: const Icon(Icons.remove, color: Colors.white)),
+          InkWell(onTap: onDecreaseClicked, child: const Icon(Icons.remove, color: Colors.white)),
           const SizedBox(width: 10),
           SizedBox(
             width: 30,
@@ -39,7 +39,7 @@ class CounterWidget extends StatelessWidget {
             ),
           ),
           const SizedBox(width: 10),
-          GestureDetector(onTap: onIncreaseClicked, child: const Icon(Icons.add, color: Colors.white)),
+          InkWell(onTap: onIncreaseClicked, child: const Icon(Icons.add, color: Colors.white)),
           const SizedBox(width: 16),
         ],
       ),

@@ -18,6 +18,9 @@ dependencies:
   google_fonts: ^6.2.1
   #Second, Third UI
   curved_navigation_bar: ^1.0.6
+  url_launcher: ^6.3.1
+  provider: ^6.1.2
+  fl_chart: ^0.69.2
 
 dev_dependencies:
   flutter_test:

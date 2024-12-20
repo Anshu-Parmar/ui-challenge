@@ -45,7 +45,7 @@ class JuiceWidget extends StatelessWidget {
                           children: [
                             Text(
                               juice.name,
-                              style: textStyle.copyWith(fontSize: 20),
+                              style: textStyle.copyWith(fontSize: 25),
                             ),
                             RichText(
                               text: TextSpan(
