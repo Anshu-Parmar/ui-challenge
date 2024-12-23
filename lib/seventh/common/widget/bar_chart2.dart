@@ -23,10 +23,8 @@ class BarChartWidget2 extends StatelessWidget {
           borderRadius: BorderRadius.circular(2),
           backDrawRodData: BackgroundBarChartRodData(
             show: true,
-            color: themeModel.isDark()
-                  ? const Color(0xFF1D1D2B)
-                  : const Color(0xFFFCFCFC),
-            fromY: 140,
+            color: themeModel.isDark() ? const Color(0xFF1D1D2B) : const Color(0xFFFCFCFC),
+            toY: 140
           ),
           toY: y,
         );
@@ -59,52 +57,95 @@ class BarChartWidget2 extends StatelessWidget {
                     BarChartGroupData(x: 11, barRods: [makeRodData(120)]),
                   ],
                   titlesData: FlTitlesData(
-                      rightTitles: const AxisTitles(sideTitles: SideTitles(showTitles: false)),
-                      topTitles: const AxisTitles(sideTitles: SideTitles(showTitles: false)),
-                      bottomTitles: AxisTitles(
-                        sideTitles: SideTitles(
-                          reservedSize: 6,
-                          showTitles: true,
-                          getTitlesWidget: (double value, TitleMeta meta) {
-                            switch (value.toInt()) {
-                              case 0:
-                                return ShowTextWidget(text: 'Jan', meta: meta,);
-                              case 1:
-                                return ShowTextWidget(text: 'Feb', meta: meta,);
-                              case 2:
-                                return ShowTextWidget(text: 'Mar', meta: meta,);
-                              case 3:
-                                return ShowTextWidget(text: 'Apr', meta: meta,);
-                              case 4:
-                                return ShowTextWidget(text: 'May', meta: meta,);
-                              case 5:
-                                return ShowTextWidget(text: 'Jun', meta: meta,);
-                              case 6:
-                                return ShowTextWidget(text: 'Jul', meta: meta,);
-                              case 7:
-                                return ShowTextWidget(text: 'Aug', meta: meta,);
-                              case 8:
-                                return ShowTextWidget(text: 'Sep', meta: meta,);
-                              case 9:
-                                return ShowTextWidget(text: 'Oct', meta: meta,);
-                              case 10:
-                                return ShowTextWidget(text: 'Nov', meta: meta,);
-                              case 11:
-                                return ShowTextWidget(text: 'Dec', meta: meta,);
-                              default:
-                                throw StateError('Not supported');
-                            }
-                          },
-                        ),
+                    rightTitles: const AxisTitles(sideTitles: SideTitles(showTitles: false)),
+                    topTitles: const AxisTitles(sideTitles: SideTitles(showTitles: false)),
+                    bottomTitles: AxisTitles(
+                      sideTitles: SideTitles(
+                        reservedSize: 40,
+                        showTitles: true,
+                        getTitlesWidget: (double value, TitleMeta meta) {
+                          switch (value.toInt()) {
+                            case 0:
+                              return ShowTextWidget(
+                                  text: 'Jan', meta: meta, isDark: themeModel.isDark(), fontWeight: FontWeight.bold);
+                            case 1:
+                              return ShowTextWidget(
+                                  text: 'Feb', meta: meta, isDark: themeModel.isDark(), fontWeight: FontWeight.bold);
+                            case 2:
+                              return ShowTextWidget(
+                                  text: 'Mar', meta: meta, isDark: themeModel.isDark(), fontWeight: FontWeight.bold);
+                            case 3:
+                              return ShowTextWidget(
+                                  text: 'Apr', meta: meta, isDark: themeModel.isDark(), fontWeight: FontWeight.bold);
+                            case 4:
+                              return ShowTextWidget(
+                                  text: 'May', meta: meta, isDark: themeModel.isDark(), fontWeight: FontWeight.bold);
+                            case 5:
+                              return ShowTextWidget(
+                                  text: 'Jun', meta: meta, isDark: themeModel.isDark(), fontWeight: FontWeight.bold);
+                            case 6:
+                              return ShowTextWidget(
+                                  text: 'Jul', meta: meta, isDark: themeModel.isDark(), fontWeight: FontWeight.bold);
+                            case 7:
+                              return ShowTextWidget(
+                                  text: 'Aug', meta: meta, isDark: themeModel.isDark(), fontWeight: FontWeight.bold);
+                            case 8:
+                              return ShowTextWidget(
+                                  text: 'Sep', meta: meta, isDark: themeModel.isDark(), fontWeight: FontWeight.bold);
+                            case 9:
+                              return ShowTextWidget(
+                                  text: 'Oct', meta: meta, isDark: themeModel.isDark(), fontWeight: FontWeight.bold);
+                            case 10:
+                              return ShowTextWidget(
+                                  text: 'Nov', meta: meta, isDark: themeModel.isDark(), fontWeight: FontWeight.bold);
+                            case 11:
+                              return ShowTextWidget(
+                                  text: 'Dec', meta: meta, isDark: themeModel.isDark(), fontWeight: FontWeight.bold);
+                            default:
+                              throw StateError('Not supported');
+                          }
+                        },
                       ),
-                      leftTitles: const AxisTitles(
-                        sideTitles: SideTitles(
-                          showTitles: true,
-                          interval: 20,
-                          reservedSize: 32,
-                        ),
-                      )),
+                    ),
+                    leftTitles: AxisTitles(
+                      sideTitles: SideTitles(
+                        showTitles: true,
+                        interval: 20,
+                        reservedSize: 40,
+                        maxIncluded: true,
+                        minIncluded: true,
+                        getTitlesWidget: (value, meta) {
+                          switch (value.toInt()) {
+                            case 20:
+                              return ShowTextWidget(
+                                  text: '20', meta: meta, isDark: themeModel.isDark(), fontWeight: FontWeight.bold);
+                            case 40:
+                              return ShowTextWidget(
+                                  text: '40', meta: meta, isDark: themeModel.isDark(), fontWeight: FontWeight.bold);
+                            case 60:
+                              return ShowTextWidget(
+                                  text: '60', meta: meta, isDark: themeModel.isDark(), fontWeight: FontWeight.bold);
+                            case 80:
+                              return ShowTextWidget(
+                                  text: '80', meta: meta, isDark: themeModel.isDark(), fontWeight: FontWeight.bold);
+                            case 100:
+                              return ShowTextWidget(
+                                  text: '100', meta: meta, isDark: themeModel.isDark(), fontWeight: FontWeight.bold);
+                            case 120:
+                              return ShowTextWidget(
+                                  text: '120', meta: meta, isDark: themeModel.isDark(), fontWeight: FontWeight.bold);
+                            case 140:
+                              return ShowTextWidget(
+                                  text: '140', meta: meta, isDark: themeModel.isDark(), fontWeight: FontWeight.bold);
+                            default:
+                              throw StateError('Not supported');
+                          }
+                        },
+                      ),
+                    ),
+                  ),
                   maxY: 140,
+                  minY: 20,
                   gridData: const FlGridData(show: false),
                   borderData: FlBorderData(show: false),
                 ),
