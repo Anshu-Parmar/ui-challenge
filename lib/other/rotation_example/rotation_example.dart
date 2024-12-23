@@ -28,7 +28,7 @@ class _RotationExampleState extends State<RotationExample> {
           const Expanded(
               child: Center(
                 child: Text(
-                  'Flutter4Fun.com',
+                  'Personal.com',
                   style: TextStyle(
                     color: Colors.white,
                   ),

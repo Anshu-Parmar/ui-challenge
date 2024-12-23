@@ -30,7 +30,7 @@ class MyApp extends StatelessWidget {
     return Consumer<MyThemeModel>(
       builder: (context, themeModel, child) {
         return MaterialApp(
-          title: 'Flutter4fun',
+          title: 'Personal',
           debugShowCheckedModeBanner: false,
           theme: ThemeData.light().copyWith(
             textTheme: const TextTheme(
