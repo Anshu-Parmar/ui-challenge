@@ -45,6 +45,23 @@ Description: Creating complex UIs using flutter.
   <img src="https://github.com/user-attachments/assets/b4c6b8f4-f3c3-4e10-8483-c4690b1df540" height="500" style="object-fit: cover;"/>
 </p><hr>
 
+<div align="left">
+  <h4 align="left" font-weight= "normal">CHALLENGE 6 : Juice app design </h4> 
+</div>
+<br>
+<p float="left"> 
+  <img src="https://github.com/user-attachments/assets/d11695bc-6ed2-481d-b944-185582768de0" height="500" style="object-fit: cover;"/>
+  <img src="https://github.com/user-attachments/assets/6ce3b16e-9184-4f77-b7c1-08876f5efae9" height="500" style="object-fit: cover;"/>
+</p><hr>
+
+<div align="left">
+  <h4 align="left" font-weight= "normal">CHALLENGE 7 : Dashboard design </h4> 
+</div>
+<br>
+<p float="left"> 
+  <img src="https://github.com/user-attachments/assets/58ffc04d-0ed6-48ff-b377-595dd374e2cf" height="500" style="object-fit: cover;"/>
+</p><hr>
+
 <h3 align="left">Getting Started:</h3>
 <p>Follow these steps to run the project locally:<br>
 1. Fork this repository : https://github.com/Anshu-Parmar/ui-challenge.git<br>
