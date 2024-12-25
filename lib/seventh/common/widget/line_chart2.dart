@@ -96,29 +96,77 @@ class LineChartWidget2 extends StatelessWidget {
                           getTitlesWidget: (double value, TitleMeta meta) {
                             switch (value.toInt()) {
                               case 0:
-                                return ShowTextWidget(text: 'Jan', meta: meta, isDark: themeModel.isDark(), fontWeight: FontWeight.bold);
+                                if(double.parse(meta.formattedValue).round() == 0) {
+                                  return ShowTextWidget(text: 'Jan', meta: meta, isDark: themeModel.isDark(), fontWeight: FontWeight.bold);
+                                } else {
+                                  return const SizedBox();
+                                }
                               case 1:
-                                return ShowTextWidget(text: 'Feb', meta: meta, isDark: themeModel.isDark(), fontWeight: FontWeight.bold);
+                                if(double.parse(meta.formattedValue).round() == 1) {
+                                  return ShowTextWidget(text: 'Feb', meta: meta, isDark: themeModel.isDark(), fontWeight: FontWeight.bold);
+                                } else {
+                                  return const SizedBox();
+                                }
                               case 2:
-                                return ShowTextWidget(text: 'Mar', meta: meta, isDark: themeModel.isDark(), fontWeight: FontWeight.bold);
+                                if(double.parse(meta.formattedValue).round() == 2) {
+                                  return ShowTextWidget(text: 'Mar', meta: meta, isDark: themeModel.isDark(), fontWeight: FontWeight.bold);
+                                } else {
+                                  return const SizedBox();
+                                }
                               case 3:
-                                return ShowTextWidget(text: 'Apr', meta: meta, isDark: themeModel.isDark(), fontWeight: FontWeight.bold);
+                                if(double.parse(meta.formattedValue).round() == 3) {
+                                  return ShowTextWidget(text: 'Apr', meta: meta, isDark: themeModel.isDark(), fontWeight: FontWeight.bold);
+                                } else {
+                                  return const SizedBox();
+                                }
                               case 4:
-                                return ShowTextWidget(text: 'May', meta: meta, isDark: themeModel.isDark(), fontWeight: FontWeight.bold);
+                                if(double.parse(meta.formattedValue).round() == 4) {
+                                  return ShowTextWidget(text: 'May', meta: meta, isDark: themeModel.isDark(), fontWeight: FontWeight.bold);
+                                } else {
+                                  return const SizedBox();
+                                }
                               case 5:
-                                return ShowTextWidget(text: 'Jun', meta: meta, isDark: themeModel.isDark(), fontWeight: FontWeight.bold);
+                                if(double.parse(meta.formattedValue).round() == 5) {
+                                  return ShowTextWidget(text: 'Jun', meta: meta, isDark: themeModel.isDark(), fontWeight: FontWeight.bold);
+                                } else {
+                                  return const SizedBox();
+                                }
                               case 6:
-                                return ShowTextWidget(text: 'Jul', meta: meta, isDark: themeModel.isDark(), fontWeight: FontWeight.bold);
+                                if(double.parse(meta.formattedValue).round() == 6) {
+                                  return ShowTextWidget(text: 'Jul', meta: meta, isDark: themeModel.isDark(), fontWeight: FontWeight.bold);
+                                } else {
+                                  return const SizedBox();
+                                }
                               case 7:
-                                return ShowTextWidget(text: 'Aug', meta: meta, isDark: themeModel.isDark(), fontWeight: FontWeight.bold);
+                                if(double.parse(meta.formattedValue).round() == 7) {
+                                  return ShowTextWidget(text: 'Aug', meta: meta, isDark: themeModel.isDark(), fontWeight: FontWeight.bold);
+                                } else {
+                                  return const SizedBox();
+                                }
                               case 8:
-                                return ShowTextWidget(text: 'Sep', meta: meta, isDark: themeModel.isDark(), fontWeight: FontWeight.bold);
+                                if(double.parse(meta.formattedValue).round() == 8) {
+                                  return ShowTextWidget(text: 'Sep', meta: meta, isDark: themeModel.isDark(), fontWeight: FontWeight.bold);
+                                } else {
+                                  return const SizedBox();
+                                }
                               case 9:
-                                return ShowTextWidget(text: 'Oct', meta: meta, isDark: themeModel.isDark(), fontWeight: FontWeight.bold);
+                                if(double.parse(meta.formattedValue).round() == 9) {
+                                  return ShowTextWidget(text: 'Oct', meta: meta, isDark: themeModel.isDark(), fontWeight: FontWeight.bold);
+                                } else {
+                                  return const SizedBox();
+                                }
                               case 10:
-                                return ShowTextWidget(text: 'Nov', meta: meta, isDark: themeModel.isDark(), fontWeight: FontWeight.bold);
+                                if(double.parse(meta.formattedValue).round() == 10) {
+                                  return ShowTextWidget(text: 'Nov', meta: meta, isDark: themeModel.isDark(), fontWeight: FontWeight.bold);
+                                } else {
+                                  return const SizedBox();
+                                }
                               case 11:
-                                return ShowTextWidget(text: 'Dec', meta: meta, isDark: themeModel.isDark(), fontWeight: FontWeight.bold);
+                                if(double.parse(meta.formattedValue).round() == 11) {
+                                  return ShowTextWidget(text: 'Dec', meta: meta, isDark: themeModel.isDark(), fontWeight: FontWeight.bold);
+                                } else {
+                                  return const SizedBox();
+                                }
                               default:
                                 throw StateError('Not supported');
                             }

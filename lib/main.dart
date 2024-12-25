@@ -1,6 +1,8 @@
+import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:uichallenge/seventh/common/theme/theme.dart';
+import 'package:flutter/foundation.dart' as foundation;
 // import 'package:uichallenge/first/first_ui.dart';
 // import 'package:uichallenge/second/second_ui.dart';
 // import 'package:uichallenge/third/third_ui.dart';
@@ -8,6 +10,7 @@ import 'package:uichallenge/seventh/common/theme/theme.dart';
 // import 'package:uichallenge/fifth/fifth_ui.dart';
 // import 'package:uichallenge/sixth/sixth_ui.dart';
 import 'package:uichallenge/seventh/seventh_ui.dart';
+// import 'package:uichallenge/eighth/eighth_ui.dart';
 
 void main() {
   //REQUIRED FOR SEVENTH UI
@@ -55,7 +58,7 @@ class MyApp extends StatelessWidget {
   //   return MaterialApp(
   //     title: 'Flutter Demo',
   //     debugShowCheckedModeBanner: false,
-  //     scrollBehavior: kIsWeb ? const MaterialScrollBehavior().copyWith(
+  //     scrollBehavior: foundation.kIsWeb ? const MaterialScrollBehavior().copyWith(
   //       dragDevices: {
   //         PointerDeviceKind.mouse,
   //         PointerDeviceKind.touch,
@@ -74,6 +77,7 @@ class MyApp extends StatelessWidget {
   //     // home: const FourthUi(),
   //     // home: const FifthUi(),
   //     // home: const SixthUi(),
+  //     // home: const EighthUi(),
   //   );
   // }
 }

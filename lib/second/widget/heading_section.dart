@@ -18,7 +18,7 @@ class HeadingSection extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Text(
-                  'Hi Nevil',
+                  'Hi Anshu',
                   style: TextStyle(
                     color: Color(0xFF7B7B7B),
                     fontSize: 18,

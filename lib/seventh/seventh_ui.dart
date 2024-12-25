@@ -46,7 +46,7 @@ class SeventhUi extends StatelessWidget {
                     Expanded(
                       child: GridView.count(
                         crossAxisCount: constraints.maxWidth < 800 ? 1 : 2,
-                        childAspectRatio: 1.7,
+                        childAspectRatio: 2.2,
                         padding: const EdgeInsets.only(left: 16, right: 16, bottom: 16, top: 4),
                         crossAxisSpacing: 16,
                         mainAxisSpacing: 16,
