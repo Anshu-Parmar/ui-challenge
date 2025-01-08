@@ -115,7 +115,7 @@ class _DetailsPageUiState extends State<DetailsPageUi> {
                   expandedInsets: EdgeInsets.zero,
                   alignmentOffset: Offset.zero,
                   controller: _genderController,
-                  initialSelection: null,
+                  initialSelection: null,   
                   hintText: "Select gender",
                   inputDecorationTheme: InputDecorationTheme(
                     filled: true,
