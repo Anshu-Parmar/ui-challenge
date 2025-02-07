@@ -3,6 +3,8 @@ import 'package:flutter/material.dart';
 // import 'package:provider/provider.dart';
 // import 'package:uichallenge/seventh/common/theme/theme.dart';
 import 'package:flutter/foundation.dart' as foundation;
+import 'package:uichallenge/other/temp/temporary.dart';
+// import 'package:uichallenge/other/textfield_ui/textfield_ui.dart';
 // import 'package:uichallenge/other/stepper/stepper_task.dart';
 // import 'package:uichallenge/first/first_ui.dart';
 // import 'package:uichallenge/second/second_ui.dart';
@@ -13,7 +15,7 @@ import 'package:flutter/foundation.dart' as foundation;
 // import 'package:uichallenge/seventh/seventh_ui.dart';
 // import 'package:uichallenge/eighth/eighth_ui.dart';
 // import 'package:uichallenge/other/task_ui/details_page.dart';
-import 'package:uichallenge/other/task_ui_two/task_two.dart';
+// import 'package:uichallenge/other/task_ui_two/task_two.dart';
 
 void main() {
   //REQUIRED FOR SEVENTH UI
@@ -83,7 +85,9 @@ class MyApp extends StatelessWidget {
       // home: const EighthUi(),
       // home: const DetailsPageUi(),
       // home: const StepperTask(),
-      home: const TmyFun(),
+      // home: const TmyFun(),
+      // home: const PaymentDetailsScreen(),
+      home: const MyHomePage(),
     );
   }
 }
